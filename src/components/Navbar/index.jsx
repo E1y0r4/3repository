@@ -1,6 +1,6 @@
 import React from 'react'
 import { navbar } from '../../utils/navbar'
-import { Container,Header,Nav,Link,Wrapper } from './style'
+import { Container,Header,Nav,Link,Wrapper,Span } from './style'
 // import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link key={id} to={path}>{title}</Link> 
             )
           })}</Nav>
-        <span>button</span>
+        <Span>Login</Span>
           </Wrapper>
       </Header>
     </Container>

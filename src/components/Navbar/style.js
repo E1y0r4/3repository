@@ -21,7 +21,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 64px;
-max-width: 1440px;
+max-width: 1180px;
 padding: 0px 20px;
 font-style: normal;
 font-size: 16px;
@@ -29,6 +29,7 @@ font-weight: 400;
 line-height: 24px;
 width: 100%;
 color: #ffffff;
+border: 1px solid red;
 `
 const Link =styled(NavLink)`
 font-style: normal;
@@ -43,7 +44,12 @@ text-decoration: none;
     color: aqua;
 }
 `
+const Span =styled.span`
+border: 1px solid white;
+border-radius: 2px;
+padding: 10px 30px;
+cursor: pointer;
+`
 
 
-
-export{Container,Header,Nav,Link,Wrapper,}
+export{Container,Header,Nav,Link,Wrapper,Span}
