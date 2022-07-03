@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {NavLink} from 'react-router-dom'
+import { ReactComponent as NavLogo } from "../../assets/icons/logoNav.svg";
 
 const Container =styled.div``
 const Header =styled.header`
@@ -29,20 +30,24 @@ font-weight: 400;
 line-height: 24px;
 width: 100%;
 color: #ffffff;
-border: 1px solid red;
+
 `
-const Link =styled(NavLink)`
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-margin: 0 32px;
-line-height: 24px;
-color: #FFFFFF;
-text-decoration: none;
-/* padding-left: 70px;  */
-:active{
-    color: aqua;
-}
+Nav.Logo =styled(NavLogo)`
+
+`;
+
+Nav.Link=styled(NavLink)`
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 32px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    /* padding-left: 70px;  */
+    :active{
+        color: aqua;
+    }
 `
 const Span =styled.span`
 border: 1px solid white;
@@ -52,4 +57,4 @@ cursor: pointer;
 `
 
 
-export{Container,Header,Nav,Link,Wrapper,Span}
+export{Container,Header,Nav,Wrapper,Span}
