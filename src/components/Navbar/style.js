@@ -35,6 +35,13 @@ color: #ffffff;
 Nav.Logo =styled(NavLogo)`
 
 `;
+Nav.title=styled.span`
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+`
 
 Nav.Link=styled(NavLink)`
     font-style: normal;
@@ -44,17 +51,11 @@ Nav.Link=styled(NavLink)`
     line-height: 24px;
     color: #FFFFFF;
     text-decoration: none;
-    /* padding-left: 70px;  */
     :active{
         color: aqua;
     }
 `
-const Span =styled.span`
-border: 1px solid white;
-border-radius: 2px;
-padding: 10px 30px;
-cursor: pointer;
-`
 
 
-export{Container,Header,Nav,Wrapper,Span}
+
+export{Container,Header,Nav,Wrapper}

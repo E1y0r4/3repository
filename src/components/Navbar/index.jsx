@@ -1,23 +1,23 @@
 import React from 'react'
 import { navbar } from '../../utils/navbar'
-import { Container,Header,Nav,Wrapper,Span } from './style'
+import { Container,Header,Nav,Wrapper, } from './style'
 import {Link} from 'react-router-dom'
-
+import Button from '../Generic/Button/index'
 const Navbar = () => {
   return (
     <Container>
       <Header>
         <Wrapper>
-          <Link to={'/home'}>
+          <Link to={'/home'} style={{display:'flex',alignItems:'center',textDecoration:'none'}}>
             <Nav.Logo/>
-        <span>logo</span>
+        <Nav.title>Houzing</Nav.title>
           </Link>
         <Nav>{navbar.map(({title, path, id})=>{
           return(
             <Nav.Link key={id} to={path}>{title}</Nav.Link> 
             )
           })}</Nav>
-        <Span>Login</Span>
+              <Button>Login</Button>
           </Wrapper>
       </Header>
     </Container>
