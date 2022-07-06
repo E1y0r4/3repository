@@ -1,3 +1,4 @@
+import Home from "../components/Home"
 import Generic from "../pages/Generic"
 
 
@@ -7,7 +8,7 @@ export const navbar =[
         id:1,
         title:"Home",
         path:"/home",
-        element:<Generic/>,
+        element:<Home/>,
         search:"?",
         hidden:false,
         private:false,

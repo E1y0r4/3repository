@@ -4,7 +4,7 @@ import styled from "styled-components";
 const getType=(type)=>{
     switch (type) {
         case 'primary':
-            return{background:'#0061df',color:'#ffffff',barder:'none'};
+            return{background:'#0061df',color:'#ffffff',border:'none'};
             case 'secondary':
                 return{border:'1px solid #e6e9ec',color:'#0d263b'};
                 case 'default':
@@ -27,6 +27,13 @@ const Container =styled.button`
     margin-left: ${({ml})=> `${ml}px`};
     margin-right: ${({mr})=> `${mr}px`};
     ${({type})=>getType(type)}
+    cursor: pointer;
+    
+    border-radius: 2px;
+    :active{
+        transform: scale(0.98);
+        opacity: 0.7;
+    }
 `
 
 

@@ -1,9 +1,11 @@
 import React from 'react'
 import { navbar } from '../../utils/navbar'
 import { Container,Header,Nav,Wrapper, } from './style'
-import {Link} from 'react-router-dom'
+import {Link,Outlet,useNavigate} from 'react-router-dom'
 import Button from '../Generic/Button/index'
+
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <Container>
       <Header>
@@ -17,9 +19,12 @@ const Navbar = () => {
             <Nav.Link key={id} to={path}>{title}</Nav.Link> 
             )
           })}</Nav>
-              <Button>Login</Button>
+              <Button onClick={()=>navigate('/login')} type={'default'} width={'120px'}>Login</Button>
           </Wrapper>
       </Header>
+      <main>
+        <Outlet/>
+      </main>
     </Container>
   )
 }

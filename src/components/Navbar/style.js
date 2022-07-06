@@ -16,6 +16,7 @@ flex: 1;
 align-items: center;
 justify-content: center;
 
+
 `
 const Wrapper=styled.div`
 display: flex;
@@ -30,7 +31,9 @@ font-weight: 400;
 line-height: 24px;
 width: 100%;
 color: #ffffff;
-
+.active{
+        color: aqua;
+    }
 `
 Nav.Logo =styled(NavLogo)`
 
@@ -52,7 +55,8 @@ Nav.Link=styled(NavLink)`
     color: #FFFFFF;
     text-decoration: none;
     :active{
-        color: aqua;
+        transform: scale(0.95);
+        opacity: 0.7;
     }
 `
 

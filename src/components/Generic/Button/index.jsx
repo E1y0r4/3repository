@@ -9,7 +9,7 @@ const Button = (
     mb,
     ml,
     mr,
-    OnClick,
+    onClick,
     children}
 ) => {
   return (
@@ -21,6 +21,7 @@ const Button = (
     mb={mb}
     ml={ml}
     mr={mr}
+    onClick={onClick}
     >
       {children}
     </Container>

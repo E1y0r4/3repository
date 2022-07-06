@@ -1,8 +1,41 @@
 import React from 'react'
+import { Container,Logo,SearchInput } from './style'
 
-const Input = () => {
+const Input = ({
+  width,
+  height,
+  children,
+  mt,
+  mb,
+  ml,
+  mr,
+  placeholder,
+  onChange,
+  pl,
+  onClick,
+  type
+}) => {
   return (
-    <div>Input</div>
+    <Container
+    mt={mt}
+    mb={mb}
+    ml={ml}
+    mr={mr}
+
+    >
+      <Logo>
+      {children}
+      </Logo>
+      <SearchInput
+      placeholder={placeholder}
+      onChange={onChange}
+      type={type}
+      width={width}
+      height={height}
+      pl={pl}
+
+      />
+    </Container>
   )
 }
 
