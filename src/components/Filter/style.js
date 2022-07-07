@@ -6,6 +6,10 @@ const Container =styled.div`
 `
 const Icon =styled.div`
 `
+Icon.HomeInput=styled(homeInput)`
+margin-top: 4px;
+margin-right: 8px;
+`
 
 const Form =styled.div`
     display: flex;
@@ -15,4 +19,4 @@ const Form =styled.div`
 `
 
 
-export {Container,Form}
+export {Container,Form, Icon}
