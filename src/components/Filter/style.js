@@ -9,6 +9,7 @@ const Container =styled.div`
 `
 const Icon =styled.div`
 `
+
 const LogoInput=styled(homeInput)`
     margin-top:3px ;
     margin-right:20px;
@@ -18,7 +19,10 @@ Icon.AdvancedSetting=styled(Advanced)`
 `
 Icon.Search=styled(Lupa)`
     margin-right: 5px;
-
+`
+Icon.HomeInput=styled(homeInput)`
+margin-top: 4px;
+margin-right: 8px;
 `
 const Form =styled.div`
     display: flex;
@@ -38,5 +42,4 @@ Odvanced.Title=styled.h2`
     line-height: 24px;
     text-transform: capitalize;
 `
-
 export {Container,Form ,LogoInput,Icon,Odvanced}
