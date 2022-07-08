@@ -12,17 +12,10 @@ const Input = ({
   placeholder,
   onChange,
   pl,
-  onClick,
   type
 }) => {
   return (
-    <Container
-    mt={mt}
-    mb={mb}
-    ml={ml}
-    mr={mr}
-
-    >
+    <Container mt={mt} mb={mb} ml={ml} mr={mr} width={width} height={height}>
       <Logo>
       {children}
       </Logo>
@@ -30,10 +23,8 @@ const Input = ({
       placeholder={placeholder}
       onChange={onChange}
       type={type}
-      width={width}
-      height={height}
+      
       pl={pl}
-
       />
     </Container>
   )

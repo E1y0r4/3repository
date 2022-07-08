@@ -3,8 +3,10 @@ import styled from "styled-components";
 const Container =styled.div`
     display: flex;
     align-items: center;
-    position: relative;
     width: 100%;
+    position: relative;
+    width: ${({width})=>(width?width:'100%')};
+    height: ${({height})=> height|| '40px'};
     margin-top: ${({mt})=> `${mt}px`};
     margin-bottom: ${({mb})=> `${mb}px`};
     margin-left: ${({ml})=> `${ml}px`};
@@ -20,8 +22,7 @@ const Logo =styled.span`
 `
 const SearchInput=styled.input`
     display: flex;
-    width: ${({width})=>(width?width:'100%')};
-    height: ${({height})=> height|| '40px'};
+    width: 100%;
     padding-left: ${({pl})=> pl || '14px'};
     border-radius: 2px;
     outline: none;
