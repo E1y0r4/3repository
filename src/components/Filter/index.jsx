@@ -24,6 +24,7 @@ const Filter = () => {
           <Input width={'200px'} mr={'20'} placeholder='Min price'/>
           <Input width={'200px'} placeholder='Max price'/>
       </Advanced.Input>
+      
   </Advanced>
   return (
     <Container>

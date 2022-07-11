@@ -1,12 +1,12 @@
 import React from 'react'
 import Filter from '../Filter'
-import Carusel from './carousel'
+import Caruosel from './Carusel'
 
 const Home = () => {
   return (
     <div>
       <Filter/>
-      <Carusel/>
+      <Caruosel/>
       </div>
   )
 }
